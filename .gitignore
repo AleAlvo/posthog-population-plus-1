@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+dist/
+build/
+*.log
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+tmp/
+temp/
+
+# Production deployment files
+.vercel
+.railway
+
+# Optional: Backend-specific
+backend/data/team.json.backup
+
+# Optional: Frontend-specific
+frontend/.vite
+frontend/.cache
+
+# Raw data files (large, generated)
+teamJSON.txt
+geocode_results.json

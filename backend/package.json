@@ -1,0 +1,27 @@
+{
+  "name": "posthog-population-backend",
+  "version": "1.0.0",
+  "description": "Fastify backend for PostHog Population +1 cover letter application",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "scrape": "node src/services/scraper.js"
+  },
+  "keywords": [
+    "fastify",
+    "posthog",
+    "api"
+  ],
+  "author": "Alexandre Alvaro",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.6.1",
+    "node-geocoder": "^4.4.1"
+  }
+}

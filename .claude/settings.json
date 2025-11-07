@@ -1,0 +1,87 @@
+{
+  "$schema": "https://storage.googleapis.com/cline-public-schemas/settings_schema_v1.json",
+  "description": "Shared project settings for PostHog Population +1 project",
+
+  "model": "claude-sonnet-4-5-20250929",
+
+  "env": {
+    "NODE_ENV": "development"
+  },
+
+  "permissions": {
+    "bash": {
+      "allowed": [
+        "npm",
+        "node",
+        "git",
+        "curl",
+        "mkdir",
+        "ls",
+        "cd",
+        "pwd",
+        "cat",
+        "echo"
+      ],
+      "denied": [
+        "rm -rf /",
+        "format",
+        "shutdown"
+      ]
+    },
+    "read": {
+      "allowed": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.json",
+        "**/*.md",
+        "**/*.css",
+        "**/*.html",
+        "**/*.env.example"
+      ],
+      "denied": [
+        "**/*.env",
+        "**/*.env.local",
+        "**/node_modules/**",
+        "**/.DS_Store"
+      ]
+    },
+    "edit": {
+      "allowed": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.json",
+        "**/*.md",
+        "**/*.css",
+        "**/*.html"
+      ],
+      "denied": [
+        "**/*.env",
+        "**/*.env.local",
+        "**/node_modules/**",
+        "**/.git/**"
+      ]
+    }
+  },
+
+  "outputStyle": {
+    "format": "markdown",
+    "codeBlockStyle": "fenced",
+    "includeLineNumbers": true
+  },
+
+  "gitConfig": {
+    "commitAttribution": {
+      "enabled": false
+    }
+  },
+
+  "telemetry": {
+    "enabled": true
+  },
+
+  "notes": [
+    "This settings file is shared with the team via git",
+    "Personal settings should go in .claude/settings.local.json (git-ignored)",
+    "See CLAUDE.md for project context and conventions"
+  ]
+}
