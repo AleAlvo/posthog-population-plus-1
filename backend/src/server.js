@@ -1,6 +1,8 @@
 import Fastify from 'fastify';
 import cors from '@fastify/cors';
 import dotenv from 'dotenv';
+import teamRoutes from './routes/team.js';
+import applicantRoutes from './routes/applicant.js';
 
 dotenv.config();
 
@@ -10,7 +12,10 @@ await fastify.register(cors, {
   origin: process.env.FRONTEND_URL || 'http://localhost:5173'
 });
 
-fastify.get('/api/health', async (request, reply) => {
+await fastify.register(teamRoutes, { prefix: '/api' });
+await fastify.register(applicantRoutes, { prefix: '/api' });
+
+fastify.get('/api/health', async () => {
   return {
     status: 'ok',
     message: 'PostHog Population +1 API is running! 🦔',
@@ -19,7 +24,7 @@ fastify.get('/api/health', async (request, reply) => {
   };
 });
 
-fastify.get('/', async (request, reply) => {
+fastify.get('/', async () => {
   return {
     message: 'Welcome to PostHog Population +1 API',
     documentation: 'Visit /api/health to check server status',

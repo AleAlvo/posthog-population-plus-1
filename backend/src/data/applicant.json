@@ -1,0 +1,142 @@
+{
+  "id": "applicant-alexandre-alvaro",
+  "name": "Alexandre Álvaro",
+  "firstName": "Alexandre",
+  "lastName": "Álvaro",
+  "role": "Product Engineer (Aspiring PostHog Teammate)",
+  "email": "a.borges.alvaro@gmail.com",
+  "phone": "+351 924 112 879",
+  "github": "https://github.com/AleAlvo",
+  "linkedin": "https://linkedin.com/in/alexandre-alvaro/",
+  "color": "purple",
+  "avatar": null,
+  "locations": [
+    {
+      "city": "Lisbon",
+      "country": "Portugal",
+      "countryCode": "PT",
+      "flag": "🇵🇹",
+      "latitude": 38.7223,
+      "longitude": -9.1393,
+      "percentage": 50,
+      "isPrimary": false
+    },
+    {
+      "city": "Brasília",
+      "country": "Brazil",
+      "countryCode": "BR",
+      "flag": "🇧🇷",
+      "latitude": -15.8267,
+      "longitude": -47.9218,
+      "percentage": 50,
+      "isPrimary": true
+    }
+  ],
+  "bio": "My professional journey — spanning software development, architecture, commercial aviation and competitive sports — has reinforced my belief in the power of teamwork and continuous improvement. I'm solutions-focused with a methodical problem-solving approach, building scalable applications with complex data structures while optimizing performance and ensuring maintainable, high-quality code.",
+  "whyPostHog": "PostHog's commitment to building in public, transparent culture, and focus on helping engineers build better products resonates deeply with my values. I've spent my career solving real problems for real users — from factory floors to logistics platforms — and I'm drawn to PostHog's mission of increasing the number of successful products in the world. The idea of building tools that help other builders is exactly the kind of impact I want to have.",
+  "skills": [
+    "React & TypeScript",
+    "Full-stack Development",
+    "Data Visualization",
+    "Performance Optimization",
+    "Testing & Quality",
+    "Team Leadership",
+    "Problem Solving",
+    "Industrial/IoT Solutions"
+  ],
+  "techStack": {
+    "frontend": [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "TailwindCSS",
+      "Shadcn/UI",
+      "TanStack Query"
+    ],
+    "backend": [
+      "Node.js",
+      "Express",
+      "Firebase",
+      "PostgreSQL",
+      "GraphQL",
+      "GCP Functions"
+    ],
+    "testing": ["Jest", "Cypress", "Vitest", "React Testing Library"],
+    "languages": ["JavaScript", "TypeScript", "Python", "Rust"]
+  },
+  "stats": {
+    "yearsOfExperience": 2,
+    "bootcampHours": 400,
+    "performanceImprovements": "40%",
+    "testCoverageIncrease": "40%",
+    "filesProcessedDaily": "500+",
+    "timeReduction": "200%",
+    "championshipsWon": 1,
+    "hallOfFameInductions": 1
+  },
+  "highlights": [
+    {
+      "title": "Factory Floor Dashboard",
+      "description": "Led 6-month frontend project building operator dashboard with data visualization widgets, reducing task management time by 200%",
+      "impact": "200% efficiency gain"
+    },
+    {
+      "title": "Industrial Automation",
+      "description": "Built Windows service (Rust) processing 500+ CAM/BOP files daily, eliminating manual data entry",
+      "impact": "Eliminated manual processes"
+    },
+    {
+      "title": "Performance Optimization",
+      "description": "Refactored async API calls and caching at AELER, reducing load times by 40%",
+      "impact": "40% faster loads"
+    },
+    {
+      "title": "CRM Integration",
+      "description": "Connected Metabase & Salesforce, enabling dynamic dashboards and increasing platform usage by 300%",
+      "impact": "300% usage increase"
+    }
+  ],
+  "funFacts": [
+    "Former commercial steward (cabin crew) at TAP Portugal for 9 years",
+    "American Football Team VP & Captain — led team to championship victory",
+    "Inducted into Cascais Crusaders Hall of Fame (2022)",
+    "Has a Master's in Architecture from University of Lisbon",
+    "Speaks Portuguese (native) and English (fluent)",
+    "Career pivot from architecture → aviation → software development"
+  ],
+  "education": [
+    {
+      "degree": "Web Development Bootcamp",
+      "school": "Ironhack Lisboa",
+      "year": "2023",
+      "hours": 400,
+      "focus": "Full-stack web development, React, Node.js, Express.js, MongoDB"
+    },
+    {
+      "degree": "Masters in Architecture",
+      "school": "Faculty of Architecture, University of Lisbon",
+      "year": "2005-2010",
+      "focus": "Design, project management, and creative problem-solving"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Procimo",
+      "role": "Front-end / Full-stack Developer",
+      "period": "08/2024 - Present",
+      "type": "Hybrid/Remote",
+      "description": "Developing factory automation and tracking solutions for industrial clients"
+    },
+    {
+      "company": "AELER Technologies",
+      "role": "Front-end / Full-stack Developer",
+      "period": "05/2023 - 07/2024",
+      "type": "Remote",
+      "description": "Contributed to Fleet Manager and Control Tower logistics platforms"
+    }
+  ],
+  "pineappleOnPizza": false,
+  "startDate": null,
+  "isApplicant": true,
+  "applicationDate": "2025-11-07"
+}
