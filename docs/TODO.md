@@ -1,6 +1,6 @@
 # PostHog Population +1 - Project TODO
 
-**Last Updated:** 2025-11-07
+**Last Updated:** 2025-11-27
 
 ---
 
@@ -22,49 +22,50 @@ Interactive map-based application showing PostHog's global team (146 members) + 
 
 ---
 
-## 🔄 Phase 2: Backend API - IN PROGRESS
+## ✅ Phase 2: Backend API - COMPLETE
 
 ### 2.1 Applicant Profile
-- [ ] Create `backend/data/applicant.json` with my profile:
+- [x] Create `backend/src/data/applicant.json` with Alexandre's profile:
   - Name, role, bio, skills
   - Dual locations (Lisbon + Brasília) with coordinates
   - GitHub, portfolio links
-  - Fun facts, stats (commits, coffee consumed, etc.)
+  - Fun facts, stats (Hall of Fame, aviation career, etc.)
   - "Why PostHog" section
 
 ### 2.2 API Routes
-- [ ] Create `backend/src/routes/team.js`
+- [x] Create `backend/src/routes/team.js`
   - GET `/api/team` - return all team members
   - GET `/api/team/:id` - return single member
-  - Add pagination/filtering if needed
+  - In-memory caching for performance
 
-- [ ] Create `backend/src/routes/applicant.js`
-  - GET `/api/applicant` - return my profile
+- [x] Create `backend/src/routes/applicant.js`
+  - GET `/api/applicant` - return applicant profile
 
-- [ ] Integrate routes into server.js
+- [x] Integrate routes into server.js
 
 ### 2.3 Testing
-- [ ] Test API endpoints locally
-- [ ] Verify CORS works
+- [x] Test API endpoints locally (all working)
+- [x] Verify CORS works (configured for localhost:5173)
 - [ ] Test with frontend once built
 
 ---
 
-## 📦 Phase 3: Frontend Core - NOT STARTED
+## 🔄 Phase 3: Frontend Core - IN PROGRESS
 
 ### 3.1 Project Setup
-- [ ] Initialize React + Vite in `frontend/` directory
-- [ ] Install dependencies:
+- [x] Initialize React + Vite in `frontend/` directory
+- [x] Install dependencies:
   - react-router-dom
   - leaflet + react-leaflet
   - framer-motion
-  - axios
+  - ~~axios~~ (removed - using native fetch)
   - posthog-js
-  - tailwindcss
+  - @tanstack/react-query
 
-- [ ] Configure TailwindCSS
-- [ ] Setup PostHog brand colors in config
-- [ ] Create basic project structure
+- [x] Configure TailwindCSS with PostHog brand colors
+- [x] Setup React 19.2 + React Compiler
+- [x] Create root package.json with `npm run dev` script
+- [ ] Create basic project structure (hooks, components, utils)
 
 ### 3.2 Map Component
 - [ ] Create `MapView` component with Leaflet
@@ -228,7 +229,8 @@ Interactive map-based application showing PostHog's global team (146 members) + 
 
 ### Tech Stack Summary
 - **Backend:** Node.js + Fastify
-- **Frontend:** React + Vite + TailwindCSS
+- **Frontend:** React 19.2 + React Compiler + Vite 7.2 + TailwindCSS 4.1
+- **Data Fetching:** TanStack Query + Native Fetch
 - **Maps:** Leaflet + React-Leaflet
 - **Animations:** Framer Motion
 - **Analytics:** PostHog
@@ -237,17 +239,21 @@ Interactive map-based application showing PostHog's global team (146 members) + 
 ### Important Decisions Made
 - Using JSON files instead of PostgreSQL (static data, no writes needed)
 - North Pole for "world" location (PostHog AI)
-- Geocoded 100% of locations successfully
+- Geocoded 100% of locations successfully (104 unique locations → 146 team members)
+- React 19.2 with React Compiler for optimal performance
+- Native fetch instead of Axios (~13KB bundle savings)
+- In-memory caching for API data (static content)
+- TailwindCSS 4.1 (latest) with PostHog brand colors
 
 ---
 
 ## 🎯 Next Immediate Steps
 
-1. **Create applicant.json** with Alexandre's profile
-2. **Build API routes** for team and applicant data
-3. **Test API endpoints**
-4. **Commit backend API changes**
-5. **Initialize frontend project**
+1. **Set up TanStack Query** provider in frontend
+2. **Create API hooks** (useTeam, useApplicant)
+3. **Build Map component** with Leaflet
+4. **Display team markers** on the map
+5. **Create team member cards** (click interaction)
 
 ---
 
